@@ -21,7 +21,7 @@
                                 <select class="form-control" id="place_id" name="place_id">
                                     <option value="">-Choose Place-</option>
                                     @foreach($bars as $bar)
-                                    <option value="{{$bar->id}}">{{$bar->restaurant_name}}</option>
+                                    <option value="{{$bar->id}}">{{$bar->restaurant_name}} ({{$bar->address}})</option>
                                     @endforeach
                                 </select>
                             </div>

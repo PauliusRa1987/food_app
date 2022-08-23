@@ -28,7 +28,7 @@
                                 <tr>
                                     <td class="text-center">{{$order->getUserInfo->name}}</td>
                                     <td class="text-center">{{$order->getDishInfo->dish_title}}</td>
-                                    <td class="text-center">{{$order->getRestInfo->restaurant_name}}</td>
+                                    <td class="text-center">{{$order->getRestInfo->restaurant_name}}  ({{$order->getRestInfo->address}})</td>
                                     <td class="text-center">{{$order->status}}</td>
                                     <td class="text-center">{{$order->stics}}</td>
 

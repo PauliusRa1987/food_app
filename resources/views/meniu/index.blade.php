@@ -30,7 +30,7 @@
                             <form action="{{route('meniu-destroy', $meniu)}}" method="POST">
                                 <tr>
                                     <td class="text-center">{{$meniu->meniu_name}}</td>
-                                    <td class="text-center">{{$meniu->getInfo->restaurant_name}}</td>
+                                    <td class="text-center">{{$meniu->getInfo->restaurant_name}} ({{$meniu->getInfo->address}})</td>
                                     <td>
                                         <div class="d-flex justify-content-center ">
                                         @if(isset(Auth::user()->role) && Auth::user()->role  > 9)

@@ -16,10 +16,10 @@ class MeniuController extends Controller
      */
     public function index(Request $request)
     {
-    
+        
             $menius = Meniu::all();
             return view('meniu.index', ['menius' => $menius]);
-        
+      
     }
 
     /**
@@ -94,7 +94,7 @@ class MeniuController extends Controller
      */
     public function destroy(Meniu $meniu)
     {
-        if($meniu->dishes->count()){
+        if ($meniu->dishes->count()) {
             return redirect()->back()->with('deleted', 'You cant delete, still dishes on sale!');
         }
         $meniu->delete();
